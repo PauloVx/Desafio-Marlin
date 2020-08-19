@@ -1,11 +1,55 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align: center;">
-  <h1>{{ message }}!</h1>
-  <img
-    width="300"
-    alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-  />
+<div class="main">
+  <div class="top-content">
+    <h1>Exibindo resultado de busca por "text"</h1>
+    <span>Encontramos um total de 20 resultados para sua busca</span>
+  </div>
+
+  <div class="container">
+    <ul id="post-list">
+      <li id="post">
+        <img src="/" />
+        <h3><strong>Titulo</strong></h3>
+        <span>Lorem ipsum dolor sit amet...</span>
+        <a href="/"><strong>Ler mais</strong></a>
+      </li>
+      <li id="post">
+        <img src="/" />
+        <h3><strong>Titulo</strong></h3>
+        <span>Lorem ipsum dolor sit amet...</span>
+        <a href="/"><strong>Ler mais</strong></a>
+      </li>
+      <li id="post">
+        <img src="/" />
+        <h3><strong>Titulo</strong></h3>
+        <span>Lorem ipsum dolor sit amet...</span>
+        <a href="/"><strong>Ler mais</strong></a>
+      </li>
+      <li id="post">
+        <img src="/" />
+        <h3><strong>Titulo</strong></h3>
+        <span>Lorem ipsum dolor sit amet...</span>
+        <a href="/"><strong>Ler mais</strong></a>
+      </li>
+    </ul>
+
+    <aside>
+      <h3 id="sidebar-categories">Categorias</h3>
+      <span>Lorem Ipsum</span>
+      <hr />
+      <span>Lorem Ipsum</span>
+      <hr />
+      <span>Lorem Ipsum</span>
+      <hr />
+      <span>Lorem Ipsum</span>
+      <hr />
+
+      <div id="search-field">
+        <h4>Procurando alguma notícia?</h4>
+        <input type="text" placeholder="Pesquisar por..." />
+      </div>
+    </aside>
+  </div>
 </div>
 
 <router-outlet></router-outlet>

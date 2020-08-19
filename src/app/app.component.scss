@@ -1,0 +1,56 @@
+@import "../sass-files/colors";
+
+.main {
+  padding-top: 30px;
+  position: relative;
+
+  .top-content {
+    text-align: center;
+    h1 {
+      color: $color-primary;
+    }
+
+    span {
+      color: $color-secondary;
+    }
+  }
+
+  .container {
+    aside {
+      width: 250px;
+      margin-right: 50px;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      padding: 0;
+      text-align: left;
+
+      h3#sidebar-categories {
+        color: $color-primary;
+        margin-bottom: 10px;
+      }
+
+      #search-field {
+        padding-top: 10px;
+        h4 {
+          color: $color-primary;
+        }
+
+        input {
+          border-radius: 5px;
+          border: 1px solid $color-secondary;
+          margin-top: 10px;
+          height: 35px;
+          width: 240px;
+
+          padding-left: 10px;
+        }
+      }
+
+      span {
+        padding: 5px 0px 5px 0px;
+        color: $color-secondary;
+      }
+    }
+  }
+}
