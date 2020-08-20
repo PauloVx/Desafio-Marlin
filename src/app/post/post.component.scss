@@ -1,0 +1,35 @@
+@import "../../sass-files/colors";
+
+.post-container {
+  border: 1px solid rgb(239, 239, 239);
+  border-radius: 5px;
+  width: 350px;
+
+  img {
+    border-radius: 5px;
+  }
+
+  .post-content {
+    padding: 10px;
+
+    #post-title {
+      color: $color-primary;
+      margin-bottom: 10px;
+    }
+
+    #post-body {
+      color: $color-secondary;
+      font-size: small;
+    }
+
+    #read-more {
+      text-decoration: none;
+      color: $color-light-blue;
+      font-size: smaller;
+
+      &:hover {
+        color: $color-dark-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  margin: 20px auto;
+  width: 750px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 170px;
+  grid-row-gap: 20px;
+
+  .post {
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+}
