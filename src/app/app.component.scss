@@ -1,55 +1,118 @@
 @import "../sass-files/colors";
 
-.main {
-  padding-top: 30px;
-  position: relative;
+/* PC */
+@media only screen and (min-width: 1224px) {
+  .main {
+    padding-top: 30px;
+    position: relative;
 
-  .top-content {
-    text-align: center;
-    h1 {
-      color: $color-primary;
-    }
-
-    span {
-      color: $color-secondary;
-    }
-  }
-
-  .container {
-    aside {
-      width: 250px;
-      margin-right: 50px;
-      position: absolute;
-      top: 100px;
-      right: 0;
-      padding: 0;
-      text-align: left;
-
-      h3#sidebar-categories {
+    .top-content {
+      text-align: center;
+      h1 {
         color: $color-primary;
-        margin-bottom: 10px;
-      }
-
-      #search-field {
-        padding-top: 10px;
-        h4 {
-          color: $color-primary;
-        }
-
-        input {
-          border-radius: 5px;
-          border: 1px solid $color-secondary;
-          margin-top: 10px;
-          height: 35px;
-          width: 240px;
-
-          padding-left: 10px;
-        }
       }
 
       span {
-        padding: 5px 0px 5px 0px;
         color: $color-secondary;
+      }
+    }
+
+    .container {
+      aside {
+        width: 250px;
+        margin-right: 60px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        padding: 0;
+        text-align: left;
+
+        margin-top: 24px;
+
+        h3#sidebar-categories {
+          color: $color-primary;
+          margin-bottom: 10px;
+        }
+
+        #search-field {
+          padding-top: 10px;
+          h4 {
+            color: $color-primary;
+          }
+
+          input {
+            border-radius: 5px;
+            border: 1px solid $color-secondary;
+            margin-top: 10px;
+            height: 35px;
+            width: 240px;
+
+            padding-left: 10px;
+
+            background-image: url("../assets/icons/search-icon.svg");
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position-x: 94%;
+            background-position-y: center;
+          }
+        }
+
+        span {
+          padding: 5px 0px 5px 0px;
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
+
+/*Cel*/
+@media only screen and (max-device-width: 600px) {
+  .main {
+    .top-content {
+      text-align: center;
+      font-size: smaller;
+      padding: 2em;
+      h1 {
+        color: $color-primary;
+      }
+
+      span {
+        color: $color-secondary;
+      }
+    }
+
+    .container {
+      aside {
+        text-align: center;
+        h3#sidebar-categories {
+          margin-top: 0.5em;
+          color: $color-primary;
+          margin-bottom: 0.5em;
+        }
+
+        #search-field {
+          padding-top: 10px;
+          h4 {
+            color: $color-primary;
+          }
+
+          input {
+            border-radius: 5px;
+            border: 1px solid $color-secondary;
+            margin-top: 10px;
+            height: 35px;
+            width: 240px;
+
+            padding-left: 10px;
+            margin-bottom: 10px;
+          }
+        }
+
+        span {
+          padding: 5px 0px 5px 0px;
+          color: $color-secondary;
+        }
       }
     }
   }
