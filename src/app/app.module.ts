@@ -6,10 +6,21 @@ import { AppComponent } from "./app.component";
 import { PostComponent } from "./post/post.component";
 import { PostListComponentComponent } from "./post-list-component/post-list-component.component";
 import { HttpClientModule } from "@angular/common/http";
+import { PostDetailsComponent } from "./post-details/post-details.component";
+import { CreatePostComponent } from "./create-post/create-post.component";
+import { routing } from "./app.routing";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, PostComponent, PostListComponentComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  declarations: [
+    AppComponent,
+    PostComponent,
+    PostListComponentComponent,
+    PostDetailsComponent,
+    CreatePostComponent,
+    HomeComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, routing],
   providers: [],
   bootstrap: [AppComponent],
 })
