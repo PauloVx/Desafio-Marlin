@@ -1,0 +1,34 @@
+@import "../../sass-files/colors";
+
+.container {
+  padding-top: 30px;
+  padding: 10px;
+  max-width: 50%;
+
+  margin: 0 auto;
+
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  .post-content {
+    p {
+      color: $color-secondary;
+      font-weight: bold;
+      font-size: large;
+    }
+
+    .title-block {
+      h1,
+      h2 {
+        font-weight: bold;
+        color: $color-primary;
+      }
+    }
+
+    .body-block {
+      font-weight: bold;
+      color: $color-primary;
+      margin-bottom: 5px;
+    }
+  }
+}

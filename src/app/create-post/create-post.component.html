@@ -1,1 +1,28 @@
-<p>create-post works!</p>
+<div class="container">
+  <h1>Cadastrar Post</h1>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <div class="form-group">
+      <label for="title"></label>
+      <input
+        type="text"
+        name="title"
+        class="title-input"
+        placeholder="Título"
+        ngModel
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="content"></label>
+      <textarea
+        name="content"
+        class="post-content"
+        cols="30"
+        rows="10"
+        placeholder="Conteúdo"
+        ngModel
+      ></textarea>
+    </div>
+    <button type="submit">Cadastrar</button>
+  </form>
+</div>

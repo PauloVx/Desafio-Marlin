@@ -25,13 +25,7 @@
     }
 
     #read-more {
-      text-decoration: none;
-      color: $color-light-blue;
       font-size: smaller;
-
-      &:hover {
-        color: $color-dark-blue;
-      }
     }
   }
 }

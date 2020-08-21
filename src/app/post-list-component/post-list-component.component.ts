@@ -7,7 +7,7 @@ import { PostsService, Post } from "../services/posts.service";
   styleUrls: ["./post-list-component.component.scss"],
 })
 export class PostListComponentComponent implements OnInit {
-  public posts: Array<Post>;
+  posts: Array<Post>;
 
   constructor(private service: PostsService) {}
 
