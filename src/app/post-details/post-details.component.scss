@@ -51,3 +51,16 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    display: block;
+    margin-top: 13rem;
+
+    .post-content {
+      a {
+        margin-bottom: 20rem;
+      }
+    }
+  }
+}

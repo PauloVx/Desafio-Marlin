@@ -83,3 +83,31 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    display: block;
+    margin-top: 13rem;
+    .content {
+      form {
+        button {
+          width: 100%;
+        }
+
+        textarea {
+          width: 100%;
+        }
+
+        input {
+          width: 100%;
+        }
+      }
+      section {
+        max-width: 380px;
+        h1 {
+          font-size: large;
+        }
+      }
+    }
+  }
+}
