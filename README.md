@@ -1,27 +1,33 @@
 # MarlinChallenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+Projeto do processo seletivo da empresa Marlin.
 
-## Development server
+## Executar
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+yarn start para executar.
 
-## Code scaffolding
+## Screenshots
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Homepage "/"
 
-## Build
+### Nesta página é feita a requisição GET para a api, e então são listados os posts recebidos.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Clicando em "ler mais" o usuário é redirecionado para a página de detalhes do post escolhido.
 
-## Running unit tests
+### Obs: Foram utilizadas imagens genéricas já que a api não fornece.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![home](https://user-images.githubusercontent.com/49623348/90946483-8542be00-e403-11ea-8624-fa4c8d50823f.png)
 
-## Running end-to-end tests
+## Detalhes "/details"
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Aqui são mostrados mais detalhes sobre o post.
 
-## Further help
+![details](https://user-images.githubusercontent.com/49623348/90946481-84aa2780-e403-11ea-8862-0adb726c09a8.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Criar "/create"
+
+### Aqui o usuário pode criar um novo post e o app faz a requisição POST enviando os dados para a api.
+
+### Obs: Não criei um botão para acessar essa rota pois não foi pedido no desafio.
+
+![cadastropost](https://user-images.githubusercontent.com/49623348/90946480-84119100-e403-11ea-80b0-b3d5b465b55e.png)
