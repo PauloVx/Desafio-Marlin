@@ -36,6 +36,11 @@ html {
     height: auto;
   }
 
+  button,
+  a {
+    cursor: pointer;
+  }
+
   .btn-back {
     text-decoration: none;
     color: $color-light-blue;
@@ -44,5 +49,11 @@ html {
     &:hover {
       color: $color-dark-blue;
     }
+  }
+
+  input,
+  button,
+  textarea {
+    font: 400 18px Roboto, sans-serif;
   }
 }
